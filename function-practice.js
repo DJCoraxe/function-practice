@@ -38,6 +38,6 @@ function addAtribute(attribute){
 
 addAtribute('skills');
 addAtribute('pet');
-addAtribute('hobbies';)
+addAtribute('hobbies');
 
 console.log(studentsInClass);
