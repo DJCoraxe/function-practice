@@ -20,10 +20,24 @@ var studentsInClass = classroom.students;
 
 // object.attribute = value;
 
-for(var i = 0; i < studentsInClass.length; i++) {
-  // write the code to add a 'hobbies' attribute to each student 
+// write a function to encapsulate the functionality above
+function addHobbies(){
+  for(var i = 0; i < studentsInClass.length; i++) {
+    // write the code to add a 'hobbies' attribute to each student
+     studentsInClass[i].hobbies = "";
+  }
 }
 
-// write a function to encapsulate the functionality above
-
 // write a function that allows someone to add any attribute to the model student (Hint: use parameters)
+function addAtribute(attribute){
+  for(var i = 0; i < studentsInClass.length; i++) {
+    var student = studentsInClass[i]
+    student[attribute] = "";
+  }
+}
+
+addAtribute('skills');
+addAtribute('pet');
+addAtribute('hobbies';)
+
+console.log(studentsInClass);
